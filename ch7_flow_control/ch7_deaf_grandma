@@ -1,0 +1,26 @@
+
+
+puts "Hello Sonny. What do you have to say to your grandma???"
+response = gets.chomp
+
+i=0
+
+while true
+  if response == "BYE"
+    i += 1 
+    break if i==3
+    puts "WHAT'S THAT???"
+  elsif response == response.upcase
+    puts "No, not since #{rand(1930..1950)}."
+    puts "What else do you have to tell me?"
+  else
+    puts "HUH?!  SPEAK UP, SONNY!"
+  end
+  i = 0 if response != "BYE"
+  response = gets.chomp
+end
+
+
+
+
+  
