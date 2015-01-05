@@ -1,0 +1,19 @@
+#Chapter 7 - A Few Thing to Try
+#99 Bottles of Beer on the Wall Lyrics
+
+i = 99
+
+while i > 1 do
+  puts "#{i} bottles of beer on the wall."
+  puts "#{i} bottles of beer."
+  i-=1
+  if i > 1
+    puts "Take one down, pass it around, #{i} bottles of beer on the wall."
+  else
+    puts "Take one down, pass it around, #{i} bottle of beer on the wall."
+  end
+end
+
+puts "#{i} bottle of beer on the wall."
+puts "#{i} bottle of beer."
+puts "Take it down, pass it around, no more bottles of beer on the wall."
