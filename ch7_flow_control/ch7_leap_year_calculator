@@ -1,0 +1,18 @@
+puts "This program calculates and prints leap years between two years you provide."
+
+puts "Enter your starting year."
+year_start = gets.chomp.to_i
+
+puts "Enter your ending year."
+year_end = gets.chomp.to_i
+
+puts "The leap years from #{year_start} to #{year_end} include:"
+
+
+for i in year_start..year_end
+  if i % 4 == 0 && i % 100 !=0
+    puts i
+  elsif i % 100 == 0 && i % 400 == 0
+    puts i 
+  end
+end
